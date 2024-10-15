@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static '/cssfile/paymentinterface.css' %}">
+</head>
+<body>
+    <br><br><br><br>
+    your item is added : <h1>{{ybb}}</h1>
+<div class="PMT1"> 
+    <h3> Choose your wallet payment</h3>
+
+        <a href="https://www.mobikwik.com/"><samp> <input type="Submit" name= "btn" value="Mobiwik"></samp></a> 
+        <a href="https://aa.phonepe.com/client/"><samp> <input type="Submit" name= "btn" value="Phonepe"></samp></a> 
+        <a href="https://www.amazon.com/ap/signin"><samp> <input type="Submit" name= "btn" value="Amazonpe"></samp></a> 
+        <a href="https://enterprise.bharatpe.in/"><samp> <input type="Submit" name= "btn" value="Bharatpe"></samp></a> 
+    
+</div>  
+<div class="PMT2">
+    <h3> Choose your CREDIT CARD PAYMENT payment</h3>
+
+
+        <a href="https://netportal.hdfcbank.com/login#/openMarketLoginCC"><samp><input type="Submit" name= "btn" value="HDFC CREDIT CARD"></samp></a> 
+        <a href="https://www.icicibank.com/mobile-banking/imobile-pay"><samp> <input type="Submit" name= "btn" value="ICICI CREDIT CARD"></samp></a> 
+        <a href="https://pgi.billdesk.com/pgidsk/pgmerc/standardchartered/scb_card.jsp"><samp> <input type="Submit" name= "btn" value="STANDARD CHARTERED "></samp></a> 
+        <a href="https://ecollect.jkbank.com/Home"><samp> <input type="Submit" name= "btn" value="JAMMU KASHMIR BANK"></samp></a> 
+</div>
+<div class="PMT3"> 
+    <h3> Choose your DEBIT CARD PAYMENT payment</h3>
+        
+        <a href="https://www.mobikwik.com/"><samp> <input type="Submit" name= "btn" value="Mobiwik"></samp></a> 
+        <a href="https://aa.phonepe.com/client/"><samp> <input type="Submit" name= "btn" value="Phonepe"></samp></a> 
+        <a href="https://www.amazon.com/ap/signin"><samp> <input type="Submit" name= "btn" value="Amazonpe"></samp></a> 
+        <a href="https://enterprise.bharatpe.in/"><samp> <input type="Submit" name= "btn" value="Bharatpe"></samp></a> 
+    
+
+</div>
+
+    <br><br><br><br>
+</body>
+</html>
+{% endblock %}
